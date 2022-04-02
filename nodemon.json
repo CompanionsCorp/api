@@ -1,0 +1,26 @@
+{
+  "watch": [
+    "src"
+  ],
+  "ext": "js,ts,json",
+  "ignore": [
+    "src/**/*.spec.ts",
+    "node_modules"
+  ],
+  "exec": "ts-node ./src/server.ts",
+  "events": {
+    "restart": "npm run lint:fix && echo '<<<App restarted>>>'"
+  },
+  "env": {
+    "NODE_ENV": "development",
+    "PORT": "3000",
+    "NAME": "api-server",
+    "DESCRIPTION": "",
+    "VERSION": "",
+    "AUTHOR": "",
+    "AUTHOR_URL": "",
+    "AUTHOR_EMAIL": "",
+    "LICENSE": "",
+    "LICENSE_URL": ""
+  }
+}
